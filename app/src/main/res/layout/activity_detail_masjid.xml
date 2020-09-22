@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DetailMasjid"
+    android:background="#ededed">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dip"
+        android:id="@+id/gambarMasjid"
+        android:layout_gravity="center" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="2dp"
+            android:background="#ffffff">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:text="TextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/nama"
+                    android:textStyle="normal|bold"
+                    android:textSize="14sp"
+                    android:textAllCaps="true"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="5dp"
+                    />
+
+                <Button
+                    android:text="Petunjuk Arah"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btn_petunjuk"
+                    android:background="@color/colorPrimary"
+                    android:textColor="#ffffff"
+                    android:textStyle="normal|bold" />
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="2dp">
+
+                <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:background="@drawable/pin_maps"
+                    android:id="@+id/img_pin_maps_masjid" />
+
+                <TextView
+                    android:text="Alamat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/alamat"
+                    android:layout_weight="1"
+                    android:textStyle="normal|bold"
+                    android:gravity="center|left"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="2dp">
+
+                <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:background="@drawable/contact"
+                    android:id="@+id/img_tlpn_masjid" />
+                <TextView
+                    android:text="No Telp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/notelp"
+                    android:layout_weight="1"
+                    android:textStyle="normal|bold"
+                    android:gravity="center|left"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="2dp">
+
+                <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:background="@drawable/calender"
+                    android:id="@+id/img_calender_masjid" />
+
+                <TextView
+                    android:text="Tahun"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/tahun"
+                    android:layout_weight="1"
+                    android:textStyle="normal|bold"
+                    android:textSize="14sp"
+                    android:gravity="center|left"/>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="2dp">
+
+                <TextView
+                    android:text="Penjelasan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView3"
+                    android:textStyle="normal|bold|italic"
+                    android:textAllCaps="true" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="2dp">
+
+                <TextView
+                    android:text="deskripsi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/deskripsiMasjid"
+                    android:textAllCaps="true" />
+
+            </LinearLayout>
+            <!--<LinearLayout-->
+                <!--android:orientation="horizontal"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_marginTop="2dp">-->
+
+                <!--<TextView-->
+                    <!--android:text="Kajian"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:id="@+id/textViewKj"-->
+                    <!--android:textAllCaps="true" />-->
+
+            <!--</LinearLayout>-->
+            <!--<LinearLayout-->
+                <!--android:orientation="horizontal"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_marginTop="2dp">-->
+
+                <!--<ListView-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:id="@+id/list" />-->
+            <!--</LinearLayout>-->
+
+
+        </LinearLayout>/
+
+
+    </ScrollView>/
+
+</LinearLayout>

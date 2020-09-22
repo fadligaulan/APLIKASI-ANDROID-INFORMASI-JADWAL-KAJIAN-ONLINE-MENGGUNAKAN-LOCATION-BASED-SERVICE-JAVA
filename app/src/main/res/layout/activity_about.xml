@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context=".AboutActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            app:srcCompat="@drawable/no_image"
+            android:id="@+id/imageView8" />
+
+        <TextView
+            android:text="Aplikasi Kajian PKU dikembangkan oleh salah satu mahasiswi dari Politeknik Caltex Riau. Aplikasi berisi daftar kajian dan daftar masjid yang ada di Kota Pekanbaru. Aplikasi terhubung dengan website yang dikelola oleh takmir masjid Kota Pekanbaru. Apabila ada kekeliruan informasi silahkan hubungi email kajianpku@gmail.com atau klik tombol Hubungi Kami"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView2"
+            android:textStyle="normal|bold"
+            android:textAlignment="center"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"/>
+
+        <Button
+            android:text="Hubungi Kami"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/hubKami"
+            android:background="@drawable/common_google_signin_btn_text_dark_normal"
+            android:layout_gravity="center"/>
+
+
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:background="#ECEFF1">
+
+        <ImageView
+            app:srcCompat="@drawable/about"
+            android:id="@+id/imageHome"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

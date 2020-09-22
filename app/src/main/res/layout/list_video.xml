@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="2dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp"
+    android:background="#ededed">
+
+    <TextView
+        android:id="@+id/kodekajian"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kode"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/deskripsiKajian"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="desk"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="207dp"
+            android:id="@+id/videokj" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/videokajian"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Kajian"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_gravity="center"
+                android:textSize="18sp"
+                android:textStyle="normal|bold"
+                android:textAllCaps="true"
+                android:textAlignment="center" />
+
+            <TextView
+                android:text="Nama Ustadz"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/ustadz"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="16dp" />
+
+            <TextView
+                android:text="Masjid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/masjidkj"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginBottom="5dp"/>
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

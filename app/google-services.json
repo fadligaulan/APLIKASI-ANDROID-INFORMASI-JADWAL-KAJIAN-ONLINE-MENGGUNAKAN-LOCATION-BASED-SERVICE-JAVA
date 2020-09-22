@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "749843108149",
+    "firebase_url": "https://info-kajian-islami.firebaseio.com",
+    "project_id": "info-kajian-islami",
+    "storage_bucket": "info-kajian-islami.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:749843108149:android:0cb7423631119389",
+        "android_client_info": {
+          "package_name": "com.crp.infokajianislami"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "749843108149-kthbth6hogls76is2os8i7n5vulqoguo.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.crp.infokajianislami",
+            "certificate_hash": "dc52ef064d98f956e9685a59a7d72503c9e84223"
+          }
+        },
+        {
+          "client_id": "749843108149-bgunfudm3r7urg5h9g36bvjjlgtv4smm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAdKQTsm3HELIlhi5kjZc-7dT0OymwHT9o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "749843108149-bgunfudm3r7urg5h9g36bvjjlgtv4smm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

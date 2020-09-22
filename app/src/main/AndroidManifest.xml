@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.crp.infokajianislami">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_CALENDAR" />
+    <uses-permission android:name="android.permission.WRITE_CALENDAR" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission
+        android:name="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE"
+        tools:ignore="ProtectedPermissions" />
+
+    <application
+        android:name=".LocationApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_info_kajian_islami"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_info_kajian_islami_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <activity android:name=".WelcomeActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity">
+
+        </activity>
+
+        <activity
+            android:name=".DetailYoutube"
+            android:parentActivityName=".StreamingActivity">
+        </activity>
+
+        <activity android:name=".KajianSekitarActivity"
+            android:parentActivityName=".MainActivity">
+        </activity>
+
+        <activity
+            android:name=".DetailKajian"
+            android:parentActivityName=".KajianActivity">
+        </activity>
+
+        <activity
+            android:name=".DetailMasjid"
+            android:parentActivityName=".MasjidActivity">
+        </activity>
+
+        <activity
+            android:name=".DetailVideo"
+            android:parentActivityName=".VideoActivity">
+        </activity>
+
+        <activity
+            android:name=".AboutActivity"
+            android:parentActivityName=".MainActivity">
+        </activity>
+
+        <activity
+            android:name=".AkunActivity"
+            android:parentActivityName=".MainActivity">
+        </activity>
+
+        <activity
+            android:name=".DetailAudio"
+            android:parentActivityName=".AudioActivity">
+        </activity>
+
+        <activity
+            android:name=".StreamingActivity"
+            android:parentActivityName=".MainActivity">
+        </activity>
+
+        <activity
+            android:name=".VideoActivity"
+            android:parentActivityName=".MainActivity">
+        </activity>
+
+        <activity
+            android:name=".MasjidActivity"
+            android:parentActivityName=".MainActivity">
+        </activity>
+
+        <activity
+            android:name=".KajianActivity"
+            android:parentActivityName=".MainActivity">
+        </activity>
+
+        <activity
+            android:name=".AudioActivity"
+            android:parentActivityName=".MainActivity">
+        </activity>
+
+        <!-- [START firebase_service] -->
+        <service android:name=".MyFirebaseInstanceService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".MyFirebaseMessagingService" android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".LocationService" /> <!-- <service android:name=".LocationMonitoringService" /> -->
+        <service android:name=".BackgroundLocationUpdateService" /> <!-- <service -->
+        <!-- android:name=".LocationUpdatesService" -->
+        <!-- android:label="My Job Service Update " -->
+        <!-- android:permission="android.permission.BIND_JOB_SERVICE" /> -->
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+    </application>
+
+</manifest>

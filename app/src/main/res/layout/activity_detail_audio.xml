@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DetailAudio">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#FFFFFF"
+            android:weightSum="1">
+
+            <SeekBar
+                android:layout_width="match_parent"
+                android:layout_height="259dp"
+                android:id="@+id/audio_detail" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/playButtonAudio"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="play"
+                android:layout_gravity="center"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@color/bg_screen3"
+                android:textColor="#ffffff" />
+
+            </LinearLayout>
+
+            <TextView
+                android:text="Judul Kajian"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/judulKajian"
+                android:textStyle="normal|bold"
+                android:textSize="18sp"
+                android:textAlignment="center" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="5dp">
+
+                <ImageView
+                    android:layout_width="28dp"
+                    android:background="@drawable/pin_maps"
+                    android:id="@+id/img_pin_maps_audio"
+                    android:layout_height="28dp" />
+
+                <TextView
+                    android:text="Nama Masjid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/namaMasjid"
+                    android:layout_weight="1"
+                    android:textStyle="normal|bold"
+                    android:gravity="center|left"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="5dp">
+
+                <ImageView
+                    android:layout_width="28dp"
+                    android:background="@drawable/ustadz"
+                    android:id="@+id/img_ustadz_audio"
+                    android:layout_height="28dp" />
+
+                <TextView
+                    android:text="Nama ustadz"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/ustadzAudio"
+                    android:layout_weight="1"
+                    android:textStyle="normal|bold"
+                    android:gravity="center|left"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="5dp">
+
+                <ImageView
+                    android:layout_width="28dp"
+                    android:background="@drawable/calender"
+                    android:id="@+id/img_calender_audio"
+                    android:layout_height="28dp" />
+
+                <TextView
+                    android:text="Tanggal Kajian"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/tanggalAudio"
+                    android:layout_weight="1"
+                    android:textStyle="normal|bold"
+                    android:gravity="center|left"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="5dp">
+
+                <TextView
+                    android:text="Penjelasan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/pnjlsnAudio"
+                    android:layout_weight="1"
+                    android:textStyle="normal|bold|italic"
+                    android:textSize="20sp" />
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="5dp">
+
+                <TextView
+                    android:text="Deskripsi Kajian"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/penjelasanAudio"
+                    android:layout_weight="1"
+                    android:textStyle="normal|bold"
+                    android:gravity="center|left"/>
+
+            </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
